@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<Windows.h>
 
 int main()
@@ -8,7 +9,7 @@ int main()
 	printf("小助手辅助已运行\n");
 	Sleep(1500);
 	printf( "请选择辅助种类\n");
-	printf("1.QQ轰炸机(老版QQ可用)\n");
+	printf("1.QQ轰炸机(老版QQ可用)\n2.快捷制作内含压缩包的图片");
 
 	scanf_s("%d",&choose);
 
@@ -54,6 +55,11 @@ int main()
 			}
 		}
 	}
-
+	if (choose == 2)
+	{
+		system("copy /b ***.jpg+***.zip ***.jpg");
+		//在星号处更改为相应文件名，并注意文件后缀格式是否需要更改，之后将文件放入源代码(运行代码的文件夹)内
+	}
+	
 	return 0;
 }
