@@ -44,6 +44,7 @@ int main()
 					a++;
 				}
 			}
+			return 0;
 		}
 		if (oh == 2)
 		{
@@ -65,6 +66,7 @@ int main()
 					a++;
 				}
 			}
+			return 0;
 		}
 	}
 	if (choose == 2)
